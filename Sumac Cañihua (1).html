@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumac Cañihua</title>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e7ece8;--pap:#f6f8f5;--ink:#15283b;--mut:#4d5f6e;--red:#b3263e;--straw:#e2bf5a;--hd:"Zilla Slab",Georgia,serif;--bd:"Public Sans",system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1b26;--pap:#172634;--ink:#e6ece9;--mut:#9db0bd;--red:#e5677c}}
+:root[data-theme=dark]{--bg:#0f1b26;--pap:#172634;--ink:#e6ece9;--mut:#9db0bd;--red:#e5677c}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--bd)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:var(--hd);line-height:1.1;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);margin-bottom:.6rem}
+p{max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.w{max-width:1080px;margin:auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:58px;gap:14px}
+.lo{font:700 1.35rem var(--hd);text-decoration:none}
+nav{display:flex;align-items:center;gap:20px;font-size:.95rem}
+nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a.on{border-color:var(--red)}
+.lg button{font:600 .85rem var(--bd);background:none;border:1px solid var(--ink);color:var(--ink);padding:3px 9px;margin-left:-1px;cursor:pointer}
+.lg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+@media(max-width:760px){nav a{display:none}}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:70px}
+h1{font-size:clamp(2.3rem,5.6vw,4.3rem);font-weight:700}
+.ld{font-size:1.15rem;color:var(--mut);margin:20px 0 28px}
+.bt{background:var(--red);color:#fff;padding:12px 22px;text-decoration:none;font-weight:600;display:inline-block;border-radius:3px}
+.bt:hover{background:var(--ink)}
+.ln{margin-left:18px;font-weight:600}
+#hp{position:relative;text-align:center}
+#hp svg{width:100%;max-width:330px;transition:transform .5s ease-out;transform-origin:50% 100%}
+.st{position:absolute;left:0;top:8%;width:112px;height:112px;border:2px solid var(--ink);border-radius:50%;display:grid;place-content:center;transform:rotate(-9deg);font-size:.82rem;line-height:1.25;background:var(--straw);color:#15283b}
+.st b{display:block;font:700 1.15rem var(--hd)}
+.cap{font-size:.85rem;color:var(--mut);margin:6px 0 0}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.st{left:6%}}
+section.s{padding:72px 0}
+.pr{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+dl{margin:0}
+dl div{padding:14px 0 14px 18px;border-left:4px solid var(--red);margin-bottom:12px}
+dl div:nth-child(even){border-color:var(--straw);margin-left:26px}
+dl b{display:block;font:700 1.25rem var(--hd)}
+@media(max-width:760px){.pr{grid-template-columns:1fr;gap:24px}}
+.rt{display:grid;grid-template-columns:250px 1fr;gap:34px;margin-top:28px}
+.stp{counter-reset:c;display:flex;flex-direction:column;gap:6px}
+.stp button{counter-increment:c;text-align:left;font:600 1.05rem var(--bd);color:var(--ink);background:none;border:0;border-left:4px solid transparent;padding:10px 12px;cursor:pointer}
+.stp button::before{content:"0" counter(c);font:700 1.1rem var(--hd);color:var(--red);margin-right:12px}
+.stp button.on{background:var(--pap);border-color:var(--red)}
+#pn{background:var(--pap);padding:30px;min-height:210px;border-radius:3px}
+#pn i{font:700 4.5rem/1 var(--hd);color:var(--straw);font-style:normal}
+#pn h3{font-size:1.8rem;margin:6px 0 10px}
+@media(max-width:760px){.rt{grid-template-columns:1fr}.stp{flex-direction:row;flex-wrap:wrap}}
+.mk{background:#1b5559;color:#eef5f2;padding:72px 0}
+.mk p{color:#cfe2dd}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:34px}
+.sg div:nth-child(2){margin-top:26px}.sg div:nth-child(4){margin-top:26px}
+.sg strong{display:block;font:700 clamp(2.2rem,5vw,3.6rem)/1 var(--hd);color:var(--straw)}
+.sg span{font-size:.95rem}
+.src{font-size:.85rem;margin-top:30px}
+@media(max-width:760px){.sg{grid-template-columns:1fr 1fr}}
+.cb{background:var(--pap);padding:30px;margin-top:24px;max-width:660px;border-radius:3px}
+label{display:block;font-weight:600;margin-bottom:16px}
+input,select,textarea{display:block;width:100%;margin-top:6px;font:400 1rem var(--bd);padding:10px;border:1px solid var(--mut);background:var(--bg);color:var(--ink);border-radius:2px}
+input[type=range]{padding:0;accent-color:var(--red)}
+.tr{height:14px;background:var(--bg);margin:14px 0 20px}
+#bar{height:100%;background:var(--red);width:15%;transition:width .2s}
+.out{display:flex;gap:34px;flex-wrap:wrap}
+.out b{display:block;font:700 2rem var(--hd)}
+.nt{font-size:.9rem;color:var(--mut);margin:14px 0 0}
+button.bt{border:0;font:600 1rem var(--bd);cursor:pointer}
+footer{padding:30px 0;font-size:.9rem;color:var(--mut);border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+#lsc{display:block;width:100%;height:clamp(150px,22vw,260px)}
+#pn{display:grid;grid-template-columns:1fr 190px;gap:22px;align-items:center}
+.bag{display:block;width:200px;margin-top:26px;transform:rotate(-4deg)}
+.us{display:flex;gap:26px;align-items:flex-end;margin-top:26px}.us figure{margin:0;flex:1}.us figure:nth-child(2){flex:1.4}.us svg{width:100%;background:var(--pap);border-radius:3px;display:block}.us figcaption{margin-top:10px;font-size:.95rem}.us b{display:block;font:700 1.2rem var(--hd)}
+@media(max-width:760px){#pn{grid-template-columns:1fr}.us{flex-direction:column;align-items:stretch}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="lo" href="#top">Sumac Cañihua</a>
+<nav><a href="#produkt" data-t="n1"></a><a href="#reise" data-t="n2"></a><a href="#markt" data-t="n3"></a><a href="#rechner" data-t="n4"></a><a href="#kontakt" data-t="n5"></a>
+<span class="lg"><button data-l="de">DE</button><button data-l="es">ES</button><button data-l="en">EN</button></span></nav></div></header>
+<main id="top">
+<div class="w hero">
+<div><h1 data-t="h1"></h1><p class="ld" data-t="ld"></p><a class="bt" href="#kontakt" data-t="c1"></a><a class="ln" href="#reise" data-t="c2"></a></div>
+<div id="hp"><svg viewBox="0 0 300 420" role="img" aria-label="Cañihua"><path d="M150 410C146 330 156 240 150 70" stroke="#4f7a52" stroke-width="5" fill="none"/><path d="M150 300C110 290 80 260 70 230 105 240 135 262 150 300ZM150 340C190 330 225 300 235 268 195 278 160 300 150 340Z" fill="#4f7a52"/><g id="pl"></g></svg>
+<div class="st" data-t="st"></div><p class="cap" data-t="loc"></p></div>
+</div>
+
+<svg id="lsc" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Altiplano, Juliaca"></svg>
+<section class="s" id="produkt"><div class="w pr">
+<div><h2 data-t="ph"></h2><p data-t="pp"></p><svg class="bag" viewBox="0 0 220 260" role="img" aria-label="Sumac Cañihua"><path d="M40 40Q110 20 180 40L190 240Q110 258 30 240Z" fill="#e2bf5a"/><path d="M40 40Q110 56 180 40" stroke="#15283b" stroke-width="3" fill="none"/><rect x="60" y="86" width="100" height="112" rx="3" fill="#f6f8f5"/><g font-family="Zilla Slab,serif" font-weight="700" text-anchor="middle" fill="#15283b"><text x="110" y="114" font-size="19">Sumac</text><text x="110" y="136" font-size="19">Cañihua</text><text x="110" y="188" font-size="10" fill="#4d5f6e">BIO EU</text></g><g fill="#b3263e"><ellipse cx="110" cy="160" rx="5" ry="11"/><ellipse cx="101" cy="164" rx="4" ry="9" fill="#e2bf5a"/><ellipse cx="119" cy="164" rx="4" ry="9" fill="#8c1d31"/></g></svg></div>
+<dl><div data-t="f1"></div><div data-t="f2"></div><div data-t="f3"></div><div data-t="f4"></div><div data-t="f5"></div></dl>
+</div></section>
+
+<section class="s" id="reise" style="background:var(--pap)"><div class="w">
+<h2 data-t="rh"></h2><p data-t="rp"></p>
+<div class="rt"><div class="stp"><button data-t="s1"></button><button data-t="s2"></button><button data-t="s3"></button><button data-t="s4"></button><button data-t="s5"></button></div><div id="pn" style="background:var(--bg)"></div></div>
+</div></section>
+
+<section class="s" id="einsatz"><div class="w"><h2 data-t="uh"></h2><div class="us">
+<figure><svg viewBox="0 0 160 110" aria-hidden="true"><ellipse cx="80" cy="66" rx="64" ry="34" fill="#c98a4b"/><path d="M46 48l10 22M76 42l10 26M106 48l10 22" stroke="#f0d39a" stroke-width="6" stroke-linecap="round"/></svg><figcaption data-t="u1"></figcaption></figure>
+<figure><svg viewBox="0 0 160 110" aria-hidden="true"><g transform="rotate(-8 80 56)"><rect x="14" y="34" width="132" height="44" rx="8" fill="#6b4a32"/><g fill="#e2bf5a"><circle cx="40" cy="52" r="4"/><circle cx="72" cy="60" r="4"/><circle cx="100" cy="46" r="4"/><circle cx="126" cy="56" r="4"/></g><g fill="#b3263e"><circle cx="56" cy="44" r="3"/><circle cx="88" cy="64" r="3"/><circle cx="114" cy="66" r="3"/></g></g></svg><figcaption data-t="u2"></figcaption></figure>
+<figure><svg viewBox="0 0 160 110" aria-hidden="true"><path d="M10 100H150M10 56H150" stroke="#15283b" stroke-width="4"/><rect x="22" y="22" width="24" height="34" rx="3" fill="#b3263e"/><rect x="52" y="28" width="24" height="28" rx="3" fill="#e2bf5a"/><rect x="86" y="18" width="24" height="38" rx="3" fill="#1b5559"/><rect x="118" y="26" width="24" height="30" rx="3" fill="#b3263e"/><rect x="26" y="66" width="30" height="34" rx="3" fill="#1b5559"/><rect x="64" y="72" width="30" height="28" rx="3" fill="#e2bf5a"/><rect x="104" y="64" width="30" height="36" rx="3" fill="#b3263e"/></svg><figcaption data-t="u3"></figcaption></figure>
+</div></div></section>
+<section class="mk" id="markt"><div class="w">
+<h2 data-t="mh"></h2><p data-t="mp"></p>
+<div class="sg"><div><strong class="n" data-v="62700">0</strong><span data-t="m1"></span></div><div><strong class="n" data-v="26">0</strong><span data-t="m2"></span></div><div><strong class="n" data-v="526">0</strong><span data-t="m3"></span></div><div><strong class="n" data-v="60">0</strong><span data-t="m4"></span></div></div>
+<p class="src">PROMPERÚ, 2026</p>
+</div></section>
+
+<section class="s" id="rechner"><div class="w">
+<h2 data-t="ch"></h2><p data-t="cp"></p>
+<div class="cb">
+<label><span data-t="cl1"></span><input id="kg" type="number" min="1" max="5000" value="50"></label>
+<label><span data-t="cl2"></span> <output id="pv">15 %</output><input id="pc" type="range" min="5" max="30" value="15"></label>
+<div class="tr"><div id="bar"></div></div>
+<div class="out"><div><span data-t="co1"></span><b id="o1"></b></div><div><span data-t="co2"></span><b id="o2"></b></div></div>
+<p class="nt" data-t="cn"></p>
+</div></div></section>
+
+<section class="s" id="kontakt" style="background:var(--pap)"><div class="w">
+<h2 data-t="kh"></h2><p data-t="kp"></p>
+<form class="cb" style="background:var(--bg)">
+<label><span data-t="kn"></span><input name="n" required autocomplete="name"></label>
+<label><span data-t="kf"></span><input name="f" autocomplete="organization"></label>
+<label><span data-t="ki"></span><select name="i"><option value="Bäckerei / Panadería / Bakery" data-t="o1"></option><option value="Riegel / Barras / Bars" data-t="o2"></option><option value="Bioladen / Tienda orgánica / Organic shop" data-t="o3"></option></select></label>
+<label><span data-t="km"></span><textarea name="m" rows="4" required></textarea></label>
+<button class="bt" type="submit" data-t="ks"></button><p class="nt" data-t="kt"></p>
+</form></div></section>
+</main>
+<footer><div class="w" data-t="ft"></div></footer>
+<script>
+const MAIL="info@sumaccanihua.pe",L=["de","es","en"];let li=0,st=0;
+const T={
+ttl:["Sumac Cañihua – Bio-Cañihua-Mehl aus Juliaca","Sumac Cañihua – harina orgánica de cañihua de Juliaca","Sumac Cañihua – organic cañihua flour from Juliaca"],
+n1:["Produkt","Producto","Product"],n2:["Reise","Recorrido","Journey"],n3:["Markt","Mercado","Market"],n4:["Rechner","Calculadora","Calculator"],n5:["Kontakt","Contacto","Contact"],
+h1:["Das vergessene Korn der Anden, jetzt als feines Mehl.","El grano olvidado de los Andes, ahora en harina fina.","The forgotten grain of the Andes, now as a fine flour."],
+ld:["Bio-Cañihua-Mehl, geröstet und mikronisiert, angebaut in Juliaca auf rund 3.800 m Höhe. Für Bäckereien, Riegelhersteller und Bioläden in Deutschland.","Harina orgánica de cañihua tostada y micronizada, cultivada en Juliaca a unos 3.800 m de altitud. Para panaderías, fabricantes de barras y tiendas orgánicas en Alemania.","Organic cañihua flour, toasted and micronized, grown in Juliaca at around 3,800 m. For bakeries, bar makers and organic shops in Germany."],
+c1:["Muster anfragen","Pedir una muestra","Request a sample"],c2:["Die Reise ansehen","Ver el recorrido","See the journey"],
+st:["Bio EU|glutenfrei","Orgánica UE|sin gluten","EU organic|gluten-free"],
+loc:["Juliaca, Region Puno, Peru","Juliaca, región Puno, Perú","Juliaca, Puno region, Peru"],
+ph:["Was im Beutel steckt","Lo que hay en la bolsa","What’s in the bag"],
+pp:["Cañihua (Chenopodium pallidicaule) ist mit der Quinoa verwandt und ernährungsphysiologisch vergleichbar, nur kennt sie hierzulande kaum jemand. Wir liefern sie als Mehl, fertig für Ihre Produktion.","La cañihua (Chenopodium pallidicaule) es pariente de la quinua y tiene un perfil nutricional comparable, pero casi nadie la conoce en Europa. La entregamos como harina, lista para su producción.","Cañihua (Chenopodium pallidicaule) is related to quinoa and nutritionally comparable, yet hardly anyone here knows it. We supply it as flour, ready for your production line."],
+f1:["Vollwertiges Protein|Alle essenziellen Aminosäuren in einer einzigen Pflanze.","Proteína completa|Todos los aminoácidos esenciales en una sola planta.","Complete protein|All essential amino acids in a single plant."],
+f2:["Eisen und Calcium|Wertvoll für pflanzenbasierte Rezepturen.","Hierro y calcio|Valiosos para recetas de base vegetal.","Iron and calcium|Useful for plant-based recipes."],
+f3:["Von Natur aus glutenfrei|Eine Option für glutenfreie Rezepturen.","Libre de gluten por naturaleza|Una opción para recetas sin gluten.","Naturally gluten-free|An option for gluten-free recipes."],
+f4:["Bio nach EU-Vorgaben|Ausgerichtet auf EU-Bio und die Kennzeichnungsverordnung (EU) Nr. 1169/2011.","Orgánica según la UE|Alineada con el reglamento orgánico y el de etiquetado (UE) n.º 1169/2011.","Organic to EU rules|Aligned with EU organic rules and labelling regulation (EU) No 1169/2011."],
+f5:["Ohne Entsaponierung|Kein zusätzlicher Waschschritt vor dem Mahlen.","Sin desaponificado|No necesita lavado adicional antes de moler.","No de-saponification|No extra washing step before milling."],
+rh:["Vom Altiplano in Ihre Backstube","Del altiplano a su panadería","From the Altiplano to your bakery"],
+rp:["Fünf Stationen, ein Produkt. Wählen Sie eine aus.","Cinco etapas, un producto. Elija una.","Five stages, one product. Pick one."],
+s1:["Anbau","Cultivo","Growing"],s2:["Ernte und Reinigung","Cosecha y limpieza","Harvest and cleaning"],s3:["Rösten","Tostado","Toasting"],s4:["Mikronisieren","Micronizado","Micronizing"],s5:["Export","Exportación","Export"],
+d1:["Auf dem Altiplano bei Juliaca, rund 3.800 m über dem Meer, wächst die Cañihua traditionell.","En el altiplano de Juliaca, a unos 3.800 m sobre el nivel del mar, la cañihua se cultiva desde tiempos ancestrales.","On the Altiplano near Juliaca, around 3,800 m above sea level, cañihua has traditionally been grown."],
+d2:["Das Korn wird geerntet, gereinigt und nach Qualität sortiert.","El grano se cosecha, se limpia y se selecciona por calidad.","The grain is harvested, cleaned and sorted by quality."],
+d3:["Beim Rösten entsteht das nussige Aroma, das Cañihua-Mehl auszeichnet.","El tostado da el aroma a frutos secos que caracteriza a la harina de cañihua.","Toasting brings out the nutty aroma that sets cañihua flour apart."],
+d4:["Feinvermahlung zu einem Mehl, das sich direkt in Teige, Riegel und Müslis mischen lässt.","Molienda fina hasta lograr una harina que se mezcla directo en masas, barras y cereales.","Fine milling into a flour that mixes straight into doughs, bars and muesli."],
+d5:["Von Peru nach Deutschland, mit den Unterlagen, die Ihr Importeur für die EU braucht.","De Perú a Alemania, con la documentación que su importador necesita para la UE.","From Peru to Germany, with the paperwork your importer needs for the EU."],
+mh:["Deutschland kauft Cañihua bereits","Alemania ya compra cañihua","Germany already buys cañihua"],
+mp:["Seit 2021 ist Deutschland wichtigster Abnehmer peruanischer Cañihua, meist als unverarbeitetes Korn. Wir bringen das fertige Mehl.","Desde 2021 Alemania es el principal destino de la cañihua peruana, casi siempre como grano sin procesar. Nosotros llevamos la harina lista.","Since 2021 Germany has been the top buyer of Peruvian cañihua, mostly as raw grain. We bring the finished flour."],
+m1:["US$ FOB: Cañihua-Exporte nach Deutschland","US$ FOB: exportaciones de cañihua a Alemania","US$ FOB: cañihua exports to Germany"],
+m2:["peruanische Firmen auf der BioFach 2026","empresas peruanas en BioFach 2026","Peruvian companies at BioFach 2026"],
+m3:["Geschäftskontakte, 20 % mehr als im Vorjahr","contactos comerciales, 20 % más que el año anterior","business contacts, 20 % more than the year before"],
+m4:["Mio. US$ erwartete Geschäfte der Delegation","millones de US$ en expectativas de negocio","million US$ in expected business"],
+ch:["Wie viel Cañihua passt in Ihren Teig?","¿Cuánta cañihua cabe en su masa?","How much cañihua fits in your dough?"],
+cp:["Mehlmenge und Anteil einstellen, für erste Backversuche.","Ajuste la cantidad de harina y el porcentaje para sus primeras pruebas.","Set the flour amount and share for your first trials."],
+cl1:["Gesamtmehl (kg)","Harina total (kg)","Total flour (kg)"],cl2:["Anteil Cañihua","Porcentaje de cañihua","Cañihua share"],
+co1:["Cañihua-Mehl","Harina de cañihua","Cañihua flour"],co2:["Restmehl (z. B. Weizen)","Resto de harina (p. ej. trigo)","Remaining flour (e.g. wheat)"],
+cn:["Reiner Rechenwert. Rezeptur und Teigführung bitte testen.","Es solo un cálculo. Pruebe la receta y el amasado.","A plain calculation. Please test recipe and dough handling."],
+kh:["Sprechen wir über Muster","Hablemos de muestras","Let’s talk samples"],
+kp:["Wir suchen Importeure und Distributoren in Deutschland. Schreiben Sie uns kurz, was Sie herstellen.","Buscamos importadores y distribuidores en Alemania. Cuéntenos en pocas líneas qué produce.","We are looking for importers and distributors in Germany. Tell us briefly what you make."],
+kn:["Name","Nombre","Name"],kf:["Unternehmen","Empresa","Company"],ki:["Ich bin","Soy","I am a"],
+o1:["Bäckerei","Panadería","Bakery"],o2:["Riegel- oder Müslihersteller","Fabricante de barras o cereales","Bar or muesli maker"],o3:["Bioladen oder Händler","Tienda orgánica o distribuidor","Organic shop or distributor"],
+km:["Nachricht","Mensaje","Message"],ks:["E-Mail vorbereiten","Preparar el correo","Prepare email"],
+kt:["Öffnet Ihr E-Mail-Programm mit dem fertigen Text.","Abre su programa de correo con el texto listo.","Opens your email app with the text filled in."],
+uh:["Wo sie hineingehört","Dónde encaja","Where it fits"],
+u1:["Brot und Gebäck|Einen Teil des Mehls ersetzen: nussiges Aroma und ein Plus an Protein in der Krume.","Pan y pastelería|Sustituya parte de la harina: aroma a frutos secos y un plus de proteína en la miga.","Bread and pastry|Swap in part of the flour for a nutty aroma and extra protein in the crumb."],
+u2:["Riegel und Müsli|Gemahlen lässt sich Cañihua gut in Riegelmassen und Mischungen einarbeiten.","Barras y cereales|Molida, la cañihua se integra bien en masas de barras y mezclas de cereales.","Bars and muesli|Milled cañihua blends easily into bar mixes and cereal blends."],
+u3:["Im Bioladen|Als Mehl im Beutel für alle, die zu Hause backen und etwas Neues probieren wollen.","En la tienda orgánica|En bolsa, para quienes hornean en casa y quieren probar algo nuevo.","In the organic shop|Bagged for home bakers who want to try something new."],
+ft:["Sumac Cañihua S.A.C., Juliaca, Peru","Sumac Cañihua S.A.C., Juliaca, Perú","Sumac Cañihua S.A.C., Juliaca, Peru"]};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=(n,d=0)=>n.toLocaleString(L[li],{maximumFractionDigits:d});
+function step(i){st=i;$$(".stp button").forEach((b,j)=>b.classList.toggle("on",j==i));$("#pn").innerHTML="<div><i>0"+(i+1)+"</i><h3>"+T["s"+(i+1)][li]+"</h3><p>"+T["d"+(i+1)][li]+"</p></div>"+SV[i]}
+function calc(){const k=+$("#kg").value||0,p=+$("#pc").value;$("#pv").textContent=p+" %";$("#o1").textContent=fmt(k*p/100,2)+" kg";$("#o2").textContent=fmt(k-k*p/100,2)+" kg";$("#bar").style.width=p+"%"}
+function setL(i){li=i;document.documentElement.lang=L[i];
+$$("[data-t]").forEach(e=>{const p=T[e.dataset.t][i].split("|");e.innerHTML=p.length>1?"<b>"+p[0]+"</b>"+p[1]:p[0]});
+document.title=T.ttl[i];$$(".lg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l==L[i]));
+step(st);calc();$$(".n[data-d]").forEach(e=>e.textContent=fmt(+e.dataset.v));
+try{localStorage.setItem("lg",L[i])}catch(e){}}
+$$(".lg button").forEach(b=>b.onclick=()=>setL(L.indexOf(b.dataset.l)));
+$$(".stp button").forEach((b,j)=>b.onclick=()=>step(j));
+$("#kg").oninput=$("#pc").oninput=calc;
+$("form").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Sumac Cañihua: "+f.get("i"))+"&body="+encodeURIComponent(f.get("m")+"\n\n"+f.get("n")+(f.get("f")?", "+f.get("f"):""))};
+let s=7;const r=()=>(s=s*16807%2147483647)/2147483647,cl=["#b3263e","#e2bf5a","#8c1d31","#d98a2b"];let h="";
+for(let i=0;i<170;i++){const y=60+i*1.75,w=4+Math.sin(i/170*3.1)*36,x=150+(r()-.5)*w*2;h+='<ellipse cx="'+(x|0)+'" cy="'+(y|0)+'" rx="'+(3+r()*3).toFixed(1)+'" ry="'+(2+r()*2).toFixed(1)+'" fill="'+cl[r()*4|0]+'" transform="rotate('+(r()*180|0)+" "+(x|0)+" "+(y|0)+')"/>'}
+$("#pl").innerHTML=h;
+const sv=x=>'<svg viewBox="0 0 200 140" aria-hidden="true">'+x+'</svg>';
+const SV=[sv('<path d="M0 95L45 45 85 85 135 35 200 90V140H0Z" fill="#7fa3ab"/><path d="M0 105Q100 85 200 105V140H0Z" fill="#8a7a4a"/><path d="M35 125V80M75 128V70M115 125V82M155 128V72" stroke="#4f7a52" stroke-width="3"/><g fill="#b3263e"><ellipse cx="35" cy="72" rx="7" ry="14"/><ellipse cx="75" cy="62" rx="7" ry="14"/><ellipse cx="115" cy="74" rx="7" ry="14" fill="#e2bf5a"/><ellipse cx="155" cy="64" rx="7" ry="14"/></g><circle cx="165" cy="25" r="14" fill="#e2bf5a"/>'),
+sv('<circle cx="100" cy="62" r="42" fill="none" stroke="#15283b" stroke-width="5"/><g fill="#8c1d31"><circle cx="82" cy="58" r="4"/><circle cx="100" cy="70" r="4"/><circle cx="116" cy="56" r="4"/><circle cx="96" cy="48" r="4"/><circle cx="110" cy="80" r="4"/></g><g fill="#e2bf5a"><circle cx="90" cy="118" r="3"/><circle cx="104" cy="126" r="3"/><circle cx="116" cy="115" r="3"/></g><path d="M142 98l30 22" stroke="#15283b" stroke-width="6"/>'),
+sv('<path d="M40 60h120l-14 30H54Z" fill="#15283b"/><path d="M160 66h30" stroke="#15283b" stroke-width="7"/><path d="M70 134q-10-20 4-34 2 14 14 18-4 10-4 16zM116 134q-9-16 3-28 2 10 11 13-3 8-3 15z" fill="#d98a2b"/><g fill="#8c1d31"><circle cx="70" cy="55" r="4"/><circle cx="88" cy="53" r="4"/><circle cx="106" cy="55" r="4"/><circle cx="124" cy="53" r="4"/></g>'),
+sv('<path d="M20 124Q100 8 180 124Z" fill="#d8bf95"/><path d="M60 124Q100 60 140 124Z" fill="#c9a77c"/><g fill="#d8bf95"><circle cx="100" cy="26" r="3"/><circle cx="120" cy="20" r="2"/><circle cx="82" cy="22" r="2"/></g><path d="M10 126H190" stroke="#15283b" stroke-width="4"/>'),
+sv('<path d="M0 118Q25 108 50 118T100 118T150 118T200 118V140H0Z" fill="#7fa3ab"/><path d="M20 100h160l-22 24H42Z" fill="#15283b"/><rect x="48" y="70" width="30" height="30" fill="#b3263e"/><rect x="80" y="70" width="30" height="30" fill="#e2bf5a"/><rect x="112" y="70" width="30" height="30" fill="#1b5559"/><rect x="64" y="42" width="30" height="28" fill="#1b5559"/><rect x="96" y="42" width="30" height="28" fill="#b3263e"/>')];
+{let g='<rect width="1200" height="260" fill="#cfe3e6"/><circle cx="930" cy="62" r="32" fill="#e2bf5a"/><g fill="#f6f8f5"><ellipse cx="250" cy="45" rx="60" ry="12"/><ellipse cx="560" cy="72" rx="46" ry="9"/></g><path d="M0 150L120 80 210 130 330 60 470 140 560 100 700 150 820 90 960 140 1080 85 1200 130V190H0Z" fill="#7fa3ab"/><path d="M0 175L150 140 300 170 480 135 650 172 850 138 1050 170 1200 145V200H0Z" fill="#4f7a6a"/><rect y="176" width="1200" height="84" fill="#8a7a4a"/>';
+for(let k=0;k<6;k++)for(let i=0;i<40+k*9;i++){const x=r()*1200,y=186+k*13+r()*5,u=3+k*.8;g+='<path d="M'+(x|0)+' '+(y+u*4|0)+'v-'+(u*3|0)+'" stroke="#4f7a52" stroke-width="1.6"/><ellipse cx="'+(x|0)+'" cy="'+(y-u*2|0)+'" rx="'+u.toFixed(1)+'" ry="'+(u*2).toFixed(1)+'" fill="'+cl[r()*4|0]+'"/>'}
+$("#lsc").innerHTML=g}
+$(".hero").addEventListener("pointermove",e=>{const b=$("#hp").getBoundingClientRect();$("#hp svg").style.transform="rotate("+Math.max(-6,Math.min(6,(e.clientX-b.left-b.width/2)/40))+"deg)"});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const e=x.target,v=+e.dataset.v,t0=performance.now();io.unobserve(e);(function f(t){const k=Math.min((t-t0)/1300,1);e.textContent=fmt(v*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f);else e.dataset.d=1})(t0)}),{threshold:.6});
+$$(".n").forEach(e=>io.observe(e));
+const so=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)$$("nav a").forEach(a=>a.classList.toggle("on",a.hash=="#"+x.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+$$("section[id]").forEach(e=>so.observe(e));
+try{li=Math.max(0,L.indexOf(localStorage.getItem("lg")))}catch(e){}
+setL(li);
+</script>
+</body>
+</html>
